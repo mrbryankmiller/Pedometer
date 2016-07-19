@@ -14,6 +14,7 @@
 		1E32824C1D3EA46500D7D251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E32824A1D3EA46500D7D251 /* LaunchScreen.storyboard */; };
 		1E3282571D3EA46500D7D251 /* PedometerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3282561D3EA46500D7D251 /* PedometerTests.swift */; };
 		1E3282621D3EA46500D7D251 /* PedometerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3282611D3EA46500D7D251 /* PedometerUITests.swift */; };
+		1E3282701D3EA63900D7D251 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32826F1D3EA63900D7D251 /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1E32825D1D3EA46500D7D251 /* PedometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3282611D3EA46500D7D251 /* PedometerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerUITests.swift; sourceTree = "<group>"; };
 		1E3282631D3EA46500D7D251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E32826F1D3EA63900D7D251 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				1E3282411D3EA46500D7D251 /* AppDelegate.swift */,
 				1E3282431D3EA46500D7D251 /* ViewController.swift */,
 				1E3282451D3EA46500D7D251 /* Main.storyboard */,
+				1E32826F1D3EA63900D7D251 /* GraphView.swift */,
 				1E3282481D3EA46500D7D251 /* Assets.xcassets */,
 				1E32824A1D3EA46500D7D251 /* LaunchScreen.storyboard */,
 				1E32824D1D3EA46500D7D251 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				1E3282441D3EA46500D7D251 /* ViewController.swift in Sources */,
 				1E3282421D3EA46500D7D251 /* AppDelegate.swift in Sources */,
+				1E3282701D3EA63900D7D251 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

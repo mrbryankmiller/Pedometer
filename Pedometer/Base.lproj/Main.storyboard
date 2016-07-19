@@ -1,25 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pedometer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="DIx-d3-jJI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZlG-NV-v5g"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GraphView" customModule="Pedometer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publish Fitnes Record " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caG-Xk-iBe">
+                                <rect key="frame" x="75" y="273" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTN-SL-ljj">
+                                <rect key="frame" x="-3" y="398" width="326" height="162"/>
+                                <color key="backgroundColor" red="1" green="0.93497983953954067" blue="0.26949781478020807" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZlG-NV-v5g" firstAttribute="top" secondItem="uTN-SL-ljj" secondAttribute="bottom" constant="8" symbolic="YES" id="1mI-OG-B7r"/>
+                            <constraint firstItem="caG-Xk-iBe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VHn-fS-dky"/>
+                            <constraint firstItem="caG-Xk-iBe" firstAttribute="centerX" secondItem="uTN-SL-ljj" secondAttribute="centerX" id="c2n-zp-kyo"/>
+                            <constraint firstItem="uTN-SL-ljj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="398" id="dWT-gN-Q75"/>
+                            <constraint firstItem="caG-Xk-iBe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ecN-Pl-cEv"/>
+                            <constraint firstItem="uTN-SL-ljj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-19" id="g1p-5C-2UN"/>
+                            <constraint firstItem="uTN-SL-ljj" firstAttribute="top" secondItem="caG-Xk-iBe" secondAttribute="bottom" constant="104" id="vRE-Lq-ane"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="graphView" destination="8bC-Xf-vdC" id="AV5-aW-7pl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="161" y="93"/>
         </scene>
     </scenes>
 </document>
